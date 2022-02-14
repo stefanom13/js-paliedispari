@@ -5,22 +5,27 @@
 
 
 let word = prompt('inserisci una parola').toLowerCase();
-console.log (word)
+console.log(word)
 
-const parolaScomposta = [...word]
-console.log (parolaScomposta)
+function parolapalindroma(parola) {
 
-const wordInverted = parolaScomposta.reverse();
-console.log (wordInverted)
+    const parolaScomposta = [...word]
+    console.log(parolaScomposta)
 
-const wordJoin = parolaScomposta.join('')
-console.log (wordJoin)
+    const wordInverted = parolaScomposta.reverse();
+    console.log(wordInverted)
 
-if (wordJoin === word) {
+    const wordJoin = parolaScomposta.join('')
+    console.log(wordJoin)
 
-    alert('la parola è palindroma')
-    
-} else {
-    alert('la parola non è palindroma')
+    if (wordJoin === word) {
+
+        alert('la parola è palindroma')
+
+    } else {
+        alert('la parola non è palindroma')
+    }
+
 }
 
+parolapalindroma(word);
