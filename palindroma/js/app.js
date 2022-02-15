@@ -9,7 +9,7 @@ console.log(word)
 
 function parolapalindroma(parola) {
 
-    const parolaScomposta = [...word]
+    const parolaScomposta = [...parola]
     console.log(parolaScomposta)
 
     const wordInverted = parolaScomposta.reverse();
@@ -18,7 +18,7 @@ function parolapalindroma(parola) {
     const wordJoin = parolaScomposta.join('')
     console.log(wordJoin)
 
-    if (wordJoin === word) {
+    if (wordJoin === parola) {
 
         alert('la parola è palindroma')
 
